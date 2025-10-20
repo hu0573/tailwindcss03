@@ -24,13 +24,14 @@ function Card({ title, picture, children, price, tags = [] }: CardProps) {
         <span className="text-green-700 font-bold text-sm py-1 mr-2">
           {price}
         </span>
-        <div className="flex pt-4">
+        <div className="flex flex-wrap pt-4">
           {tags.map((item) => (
             <Tag key={item}>{item}</Tag>
           ))}
         </div>
-
-        <div>button</div>
+        <div className="bg-green-500 px-3 py-1 w-max rounded-full font-bold text-white">
+          View Property
+        </div>
       </div>
     </div>
   );

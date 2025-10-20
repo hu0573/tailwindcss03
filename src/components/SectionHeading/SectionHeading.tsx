@@ -10,7 +10,7 @@ function SectionHeading() {
           title="Ocrhid Villa"
           picture="./images/1.jpeg"
           price="$4,500,000"
-          tags={["1 bed", "1 bath room"]}
+          tags={["7 Beds", "7 Baths"]}
         >
           Located in the suburbs of california, orchild villa offers luxury with
           a modern touch. Equipped with green lighting and rainwater harvesting
