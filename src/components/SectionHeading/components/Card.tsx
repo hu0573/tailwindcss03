@@ -1,15 +1,29 @@
-function Card() {
-  const title = "Ocrhid Villa";
-  const description =
-    "Located in the suburbs of california, orchild villa offers luxury with a modern touch. Equipped with green lighting and rainwater harvesting system, this property is eco-friendly";
-  const price = "$4,500,000";
-  const picture = "./images/1.jpeg";
+interface CardProps {
+  title: string;
+  picture: string;
+  children: React.ReactNode;
+  price: string;
+}
+
+function Card({ title, picture, children, price }: CardProps) {
   return (
-    <div>
-      <img src={picture} alt="property" className="h-50 w-100"></img>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <p>{price}</p>
+    <div className="shadow-lg rounded-2xl m-2 overflow-hidden">
+      <img
+        src={picture}
+        alt="property"
+        className="w-full h-50 object-cover rounded-t-2xl"
+      ></img>
+      <div className="mx-6 my-4">
+        <h2 className="font-bold text-xl mb-2">{title}</h2>
+        <p className="text-gray-700">{children}</p>
+      </div>
+      <div className="mx-6 my-4">
+        <span className="text-green-700 font-bold text-sm py-1 mr-2">
+          {price}
+        </span>
+        <div>tag</div>
+        <div>button</div>
+      </div>
     </div>
   );
 }
