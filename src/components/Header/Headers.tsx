@@ -5,9 +5,9 @@ function Header() {
   return (
     <nav>
       {/* Container for the entire nav */}
-      <div className="bg-green-100 max-w-7xl mx-auto shadow-xl">
+      <div className="bg-green-100   shadow-xl">
         {/* Container for the left and right section */}
-        <div className="flex justify-between">
+        <div className="flex justify-between max-w-7xl mx-auto">
           {/* left */}
           <LeftPart></LeftPart>
           {/* right */}
