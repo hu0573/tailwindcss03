@@ -1,11 +1,14 @@
+import Tag from "./components/Tag/Tag";
+
 interface CardProps {
   title: string;
   picture: string;
   children: React.ReactNode;
   price: string;
+  tags?: string[];
 }
 
-function Card({ title, picture, children, price }: CardProps) {
+function Card({ title, picture, children, price, tags = [] }: CardProps) {
   return (
     <div className="shadow-lg rounded-2xl m-2 overflow-hidden">
       <img
@@ -21,7 +24,12 @@ function Card({ title, picture, children, price }: CardProps) {
         <span className="text-green-700 font-bold text-sm py-1 mr-2">
           {price}
         </span>
-        <div>tag</div>
+        <div className="flex pt-4">
+          {tags.map((item) => (
+            <Tag key={item}>{item}</Tag>
+          ))}
+        </div>
+
         <div>button</div>
       </div>
     </div>

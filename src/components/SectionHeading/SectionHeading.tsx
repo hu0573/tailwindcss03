@@ -1,4 +1,4 @@
-import Card from "./components";
+import Card from "./components/Card";
 function SectionHeading() {
   return (
     <div className="mt-5 mx-auto max-w-7xl px-8">
@@ -6,7 +6,12 @@ function SectionHeading() {
         <h2 className="text-3xl text-gray-500 mb-2">Recent Properties</h2>
       </div>
       <div className="grid grid-cols-3">
-        <Card title="Ocrhid Villa" picture="./images/1.jpeg" price="$4,500,000">
+        <Card
+          title="Ocrhid Villa"
+          picture="./images/1.jpeg"
+          price="$4,500,000"
+          tags={["1 bed", "1 bath room"]}
+        >
           Located in the suburbs of california, orchild villa offers luxury with
           a modern touch. Equipped with green lighting and rainwater harvesting
           system, this property is eco-friendly
