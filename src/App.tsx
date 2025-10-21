@@ -4,6 +4,7 @@ import SectionHeading from "./components/SectionHeading";
 import Banner from "./components/Banner";
 import Location from "./components/Location";
 import DiscountBanner from "./components/DiscountBanner";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Banner></Banner>
       <Location></Location>
       <DiscountBanner></DiscountBanner>
+      <Testimonials></Testimonials>
     </>
   );
 }
