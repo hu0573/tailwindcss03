@@ -1,4 +1,4 @@
-function Banner2() {
+function DiscountBanner() {
   return (
     <div className="mt-5 mx-auto max-w-7xl px-8">
       <div
@@ -22,4 +22,4 @@ function Banner2() {
   );
 }
 
-export default Banner2;
+export default DiscountBanner;

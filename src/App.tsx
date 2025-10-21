@@ -3,7 +3,7 @@ import SiteBanner from "./components/SiteBanner";
 import SectionHeading from "./components/SectionHeading";
 import Banner from "./components/Banner";
 import Location from "./components/Location";
-import Banner2 from "./components/Banner2";
+import DiscountBanner from "./components/DiscountBanner";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <SectionHeading></SectionHeading>
       <Banner></Banner>
       <Location></Location>
-      <Banner2></Banner2>
+      <DiscountBanner></DiscountBanner>
     </>
   );
 }
