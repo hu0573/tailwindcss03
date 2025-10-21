@@ -5,6 +5,7 @@ import Banner from "./components/Banner";
 import Location from "./components/Location";
 import DiscountBanner from "./components/DiscountBanner";
 import Testimonials from "./components/Testimonials";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Location></Location>
       <DiscountBanner></DiscountBanner>
       <Testimonials></Testimonials>
+      <ContactForm></ContactForm>
     </>
   );
 }
