@@ -6,6 +6,7 @@ import Location from "./components/Location";
 import DiscountBanner from "./components/DiscountBanner";
 import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <DiscountBanner></DiscountBanner>
       <Testimonials></Testimonials>
       <ContactForm></ContactForm>
+      <Footer></Footer>
     </>
   );
 }
