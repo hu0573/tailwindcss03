@@ -8,10 +8,16 @@ import Testimonials from "./components/Testimonials";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 
+import { useState } from "react";
+
 function App() {
+  const [mode, setMode] = useState<string>("dark");
+  const toggleDarkMode = (): void => {
+    mode === "dark" ? setMode("") : setMode("dark");
+  };
   return (
-    <>
-      <Header></Header>
+    <div data-theme={mode}>
+      <Header ToggleDarkMode={toggleDarkMode}></Header>
       <SiteBanner></SiteBanner>
       <SectionHeading></SectionHeading>
       <Banner></Banner>
@@ -20,7 +26,7 @@ function App() {
       <Testimonials></Testimonials>
       <ContactForm></ContactForm>
       <Footer></Footer>
-    </>
+    </div>
   );
 }
 

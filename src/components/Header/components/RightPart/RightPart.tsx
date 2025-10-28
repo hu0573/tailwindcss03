@@ -1,4 +1,8 @@
-function RightPart() {
+interface RightPartProps {
+  ToggleDarkMode: () => void;
+}
+
+function RightPart({ ToggleDarkMode }: RightPartProps) {
   return (
     <div className="hidden md:flex space-x-4 items-center">
       <a
@@ -19,12 +23,12 @@ function RightPart() {
       >
         Contact
       </a>
-      <a
+      <button
         className="px-2 py-4 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
-        href="#"
+        onClick={() => ToggleDarkMode()}
       >
-        ☀️Toogle Dark Mode
-      </a>
+        ☀️Toggle Dark Mode
+      </button>
     </div>
   );
 }
