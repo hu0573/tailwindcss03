@@ -3,7 +3,7 @@ import { Logo, Column, SocialMedia } from "./components";
 function Footer() {
   return (
     <div className="flex flex-col w-full items-center max-w-7xl mx-auto mt-20 mb-10">
-      <div className="flex items-start justify-between w-full px-5">
+      <div className="flex flex-col sm:flex-row items-start justify-between w-full px-5">
         <Logo></Logo>
         <Column
           title="PRODUCTS"
